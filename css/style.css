@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, Helvetica, sans-serif;
+  color: #333;
+  background-color: #e2e2e2;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+/*---------------- header  ---------------*/
+header {
+  height: 162px;
+  border-radius: 8px;
+  border-color: #d1d8e1;
+  border-style: solid;
+  margin-bottom: 10px;
+}
+
+.logo {
+  height: 162px;
+  width: 300px;
+  background-image: url("../images/readbooks.png");
+  border-color: red;
+}
+
+/*--------------- body ---------*/
+
+main {
+  border-radius: 8px;
+  border-color: #d1d8e1;
+  /*  border-color: cornflowerblue;*/
+  border-style: solid;
+  margin-bottom: 5px;
+/*  d7dbe0*/
+}
+
+#row_books {
+  display: grid;
+  justify-content: space-around;
+  /*  grid-template-columns: 180px 180px 180px 180px 180px 180px;*/
+  gap: 10px;
+  /*  grid-template-columns: 300px 300px 300px;*/
+  grid-template-columns: auto auto auto auto auto auto;
+  padding-bottom: 10px;
+
+}
+
+.book_cover {
+  display: inline-block;
+  border: 1px solid #ccc;
+border-radius: 5px;
+  width: 180px;
+  height: 310px;
+  padding: 8px;
+  margin-top: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.book_cover a:link, a:visited {
+  text-decoration: none;
+  color: #222;
+}
+
+.book_cover a:hover, a:visited {
+  font-size: 1.2em;
+  text-shadow: 1px 1px 3px #9dacc4;
+}
+.desc {
+
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 18px;
+
+}
+
+/*
+  .clearfix {
+    overflow: auto;
+  }
+*/
+
+/*-------- footer ---------*/
+footer {
+  padding-top: 10px;
+  display: block;
+  border-radius: 8px;
+  background-color: #6A86B3;
+/*  background-color: cornflowerblue;*/
+  text-align: center;
+}
+
+footer p {
+
+  padding: 8px;
+  color: white;
+  font-size: 10px;
+
+}

@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*--------- head -------------*/
+header {
+  display: grid;
+  grid-template-columns: 80px auto 80px;
+  text-align: center;
+
+}
+
+.home {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#caption {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.set {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.pag {
+  display: block;
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  align-text: center;
+}
+
+.pagination {
+  display: inline-block;
+padding: 2px 20px;
+  align-text: center;
+}
+
+
+.pagination a {
+  color: black;
+  float: left;
+  /*padding: 2px 1px;*/
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #9dacc4;
+  color: white;
+  border-radius: 3px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 3px;
+}/*
+*/
+
+
+.pagination ul {
+  list-style-type:none;
+  
+}
+
+.pagination li {
+  color: black;
+  float: left;
+  padding: 2px 2px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.pagination li.active {
+  background-color: #9dacc4;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination li:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+
+
+
+
+hr {
+  color: #9dacc4;
+  margin: 6px;
+}
+/*---------- body ---------------*/
+body {
+  /*  background-color: steelblue;*/
+  background-color: #e2e2e2;
+}
+
+.wrap {
+  max-width: 1170px;
+  border: 1px solid #e4e4e4;
+  padding 10px;
+  margin: auto;
+  border-radius: 4px;
+}
+
+section {
+  /*  padding: 5px auto;*/
+  /*  margin: auto;*/
+}
+
+#page {
+  border-radius: 20px;
+
+
+}
+
+.sentence {
+  display: flex;
+  flex-direction: row;
+  border-color: #cfcfcf;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  background-image: url("../images/bg_page.png");
+  background-repeat: repeat-y;
+  background-size: contain;
+  padding: 3px;
+  align-items: center;
+
+}
+
+.sentence p {
+  font-size: 16px;
+  color: #000000;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.text_or {
+  width: 50%;
+  margin: 5px;
+}
+
+.text_tr {
+  width: 50%;
+  margin: 5px;
+}
+
+.simple_text {
+  display: block;
+  flex-direction: row;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+}
+/*-------- footer ---------*/
+footer {
+  padding-top: 10px;
+  display: block;
+  border-radius: 8px;
+  background-color: #6A86B3;
+/*  background-color: cornflowerblue;*/
+  text-align: center;
+}
+
+footer p {
+
+  padding: 8px;
+  color: white;
+  font-size: 10px;
+
+}
